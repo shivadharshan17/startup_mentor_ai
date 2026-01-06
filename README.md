@@ -42,7 +42,7 @@ Frontend
 
 Backend
 
-AI/ML
+AI / ML
 
 Databases & Infrastructure
 
@@ -64,15 +64,29 @@ AI Engine	Google Gemini 3
 SDK	@google/genai
 Assets	Custom SVGs & emoji icons
 Image Proxy	Weserv.nl (high-performance image optimization)
-
 🚀 Run Locally
-
 Prerequisites
+
 Node.js: v18 or higher
+
 Gemini API Key: Get one from Google AI Studio
 
-Setup with Visual Studio Code.
-1.Open the project folder in Visual Studio Code.
-2.Install dependencies: npm install
-3.Set the GEMINI_API_KEY in [.env.local](.env.local) to your Gemini API key
-4.Run the app: npm run dev
+Setup (Visual Studio Code)
+
+Open the project folder in Visual Studio Code
+
+Install dependencies
+
+npm install
+
+
+Configure environment variables
+
+Create a file named .env.local in the project root:
+
+GEMINI_API_KEY=your_api_key_here
+
+
+Run the application
+
+npm run dev
