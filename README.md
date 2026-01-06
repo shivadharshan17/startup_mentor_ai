@@ -64,53 +64,15 @@ AI Engine	Google Gemini 3
 SDK	@google/genai
 Assets	Custom SVGs & emoji icons
 Image Proxy	Weserv.nl (high-performance image optimization)
+
 🚀 Run Locally
-1️⃣ Prerequisites
 
+Prerequisites
 Node.js: v18 or higher
-
 Gemini API Key: Get one from Google AI Studio
 
-2️⃣ Project Structure
-startup-mentor-ai/
-├─ index.html        # App entry point
-├─ src/
-│  ├─ index.tsx      # React root
-│  ├─ App.tsx        # Core application logic
-│  ├─ components/    # Reusable UI components
-│  └─ services/      # Gemini API integration
-
-3️⃣ Setup with Vite (Recommended)
-
-Vite provides fast startup, modern ESM support, and environment variable handling.
-
-Step 1: Create the project
-npm create vite@latest startup-mentor-ai -- --template react-ts
-cd startup-mentor-ai
-
-Step 2: Add project files
-
-Replace the contents of the src/ directory with the provided project files.
-Ensure index.html remains in the root directory.
-
-Step 3: Install Gemini SDK
-npm install @google/genai
-
-Step 4: Configure Environment Variables
-
-Create a .env file in the project root:
-
-VITE_GEMINI_API_KEY=your_api_key_here
-
-
-Note:
-If the code references process.env.API_KEY, update it to:
-
-import.meta.env.VITE_GEMINI_API_KEY
-
-
-inside geminiService.ts.
-
-Step 5: Start the development server
-npm run dev
-
+Setup with Visual Studio Code.
+1.Open the project folder in Visual Studio Code.
+2.Install dependencies: npm install
+3.Set the GEMINI_API_KEY in [.env.local](.env.local) to your Gemini API key
+4.Run the app: npm run dev
